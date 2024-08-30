@@ -841,18 +841,6 @@ $('#colLevels ul').on("click", "li input", function(e) {
           //var SOURCE= SOURCE_raw.bold();
 
 
-          var today = new Date();
-         // var newCitation = NCHS + ". " + tableCaption + ". " + NHIS +
-         //     ". Generated interactively: " + today.toDateString() + ".";
-
-          var today3 = new Date().toDateString().slice(4);
-          var newCitation = NCHS + ". " + tableCaption + ". " + NHIS + emdash2+" Teen"+
-              ". Generated interactively: " + today3 + " from https://wwwndev.cdc.gov/NHISDataQueryTool/NHIS_TEEN/index.html";
-
-          newSource = "<b>Source:</b> " + NCHS + ", " + NHIS + " -Teen";
-          newSource2 = "<b>Source:</b> " + NCHS + ", " + NHIS + emdash2 + " Teen";
-        //newSource = NCHS+", "+NHIS+", "+yearName;
-          //      newSource = "<b>Source:</b> "+SHS+", "+NCHS+", "+NHIS+", "+yearName;
 
           var statNote = mepsNotes[stat_var];
           var statName2 = statName;
@@ -889,6 +877,20 @@ $('#colLevels ul').on("click", "li input", function(e) {
           var plotCaption = showSEs ? qnewtitle :
               qnewtitle.replace(" (95% confidence intervals)", "");
           $('#plot-title').text(plotCaption);
+
+          var today = new Date();
+          // var newCitation = NCHS + ". " + tableCaption + ". " + NHIS +
+          //     ". Generated interactively: " + today.toDateString() + ".";
+
+          var today3 = new Date().toDateString().slice(4);
+          var newCitation = NCHS + ". " + titleCaption + ". " + NHIS + emdash2 + " Teen" +
+              ". Generated interactively: " + today3 + " from https://wwwndev.cdc.gov/NHISDataQueryTool/NHIS_TEEN/index.html";
+
+          newSource = "<b>Source:</b> " + NCHS + ", " + NHIS + " -Teen";
+          newSource2 = "<b>Source:</b> " + NCHS + ", " + NHIS + emdash2 + " Teen";
+          //newSource = NCHS+", "+NHIS+", "+yearName;
+          //      newSource = "<b>Source:</b> "+SHS+", "+NCHS+", "+NHIS+", "+yearName;
+
 
           plotCaption3 = newCaption3;
           $('#plot-caption3').text(tableCaption3);

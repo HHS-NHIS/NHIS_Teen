@@ -36,9 +36,9 @@
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
-<body class="no-js">
+    <body class="no-js">
 
-    <!-- Global Include -->
+        <!-- Global Include -->
     <!-- #include virtual="/NHISDataQueryTool/TemplatePackage/4.0/includes/global-alert.html" -->
     <div class="container-fluid header-wrapper">
         <div class="container">
@@ -113,11 +113,11 @@
                                     <option value="SLE_RAC">Experienced discrimination due to race or ethnic group</option>
                                     <option value="SLE_GEN">Experienced discrimination due to sexual orientation or gender identity</option>
                                 </optgroup>
-                                <!--              <optgroup label="Experiences with discrimination ">
-                                                  <option value="ED_COURTESY">Ever treated with less courtesy</option>
-                                                  <option value="ED_SERVICE">Ever received poorer service</option>
-                                                  <option value="ED_SMART">Ever perceived as not smart</option>
-                                              </optgroup>-->
+                  <!--              <optgroup label="Experiences with discrimination ">
+                                    <option value="ED_COURTESY">Ever treated with less courtesy</option>
+                                    <option value="ED_SERVICE">Ever received poorer service</option>
+                                    <option value="ED_SMART">Ever perceived as not smart</option>
+                                </optgroup>-->
                                 <optgroup label="Social and emotional supports">
                                     <option value="SOEMSUPP">Social and emotional support</option>
                                     <option value="PEER_SUPP">Peer support</option>
@@ -174,14 +174,14 @@
                                 <legend class="em-legend">Select data view:</legend>
                                 <ul class="usa-unstyled-list">
                                     <div class="shiny-options-group">
-                                        <!--                                        <li style="display: inline-block; padding-right: 30px;">
-                                                         <input id="data-view-trend" type="radio" name="data-view" value="trend" disabled />
-                                                         <label for="data-view-trend">Trends over time</label>
-                                                     </li>   -->
-                                        <li style="display: inline-block; padding-right: 30px;">
-                                            <input id="data-view-cross" type="radio" name="data-view" value="cross" checked="checked" />
-                                            <label for="data-view-cross">Single time period</label>
-                                        </li>
+                           <!--                                        <li style="display: inline-block; padding-right: 30px;">
+                                            <input id="data-view-trend" type="radio" name="data-view" value="trend" disabled />
+                                            <label for="data-view-trend">Trends over time</label>
+                                        </li>   -->
+                                    <li style="display: inline-block; padding-right: 30px;">
+                                        <input id="data-view-cross" type="radio" name="data-view" value="cross" checked="checked" />
+                                        <!--  <label for="data-view-cross">Single time period</label> -->
+                                    </li>
                                     </div>
                                 </ul>
                             </fieldset>
@@ -190,18 +190,20 @@
                                 <div class="flex-parent">
                                     <div class="flex-child-fill year-start">
                                         <!--        <label for="year-start">3 year average:</label>
-                                                <select id="year-start">
-                                                    <!--           <option value="2019-2021">2019-2021</option>  -->
-                                        <option value="July 2021-December 2022" selected></option>
+    <select id="year-start">
+        <!--           <option value="2019-2021">2019-2021</option>  -->
+                                        <!--         <option value="July 2021-December 2022"></option>-->
+                                        <!--  <option value="July 2021-December 2023" selected>July 2021-December 2023</option> -->
                                         </select>
-                                    </div>
+</div>
                                     <div class="flex-child-fill year-main">
-                                        <label for="year"></label>
-                                        <label for="year">Eighteen month average:</label>
-                                        <select id="year">
-                                            <option value="July 2021-December 2022" selected>July 2021-December 2022</option> -->
-                                            <!--           <option value="2019-2021">2019-2021</option>  -->
-                                        </select>
+                                             <label for="year"></label> 
+                                             <label for="year">Time Period:</label>
+                                             <select id="year">
+                                                 <option value="July 2021-December 2022">July 2021-December 2022</option> -->
+                                                 <option value="July 2021-December 2023" selected>July 2021-December 2023</option> -->
+                                                 <!--           <option value="2019-2021">2019-2021</option>  -->
+                                             </select>
                                     </div>
                                 </div>
                             </fieldset>
@@ -220,7 +222,7 @@
                                                 <option value="race">Race</option>
                                                 <option value="parnum">Number of residential parents</option>
                                                 <!--                   <option value="hisprace">Hispanic or Latino origin and race</option>
-                                                <option value="family">Family structure</option>   -->
+    <option value="family">Family structure</option>   -->
                                                 <option value="disability">Disability status</option>
                                                 <option value="devdis">Any developmental disability</option>
                                             </optgroup>
@@ -232,7 +234,7 @@
                                             </optgroup>
                                             <optgroup label="Socio-economic Status">
                                                 <!--              <option value="work">Parental employment</option>
-                                                <option value="education">Parental education</option>  -->
+    <option value="education">Parental education</option>  -->
                                                 <option value="education">Parental education</option>
                                                 <option value="poverty">Family income</option>
                                                 <option value="insurance">Health insurance coverage</option>
@@ -343,20 +345,20 @@
                                     <br>
                                     <br>
                                     <p>
-                                        Data from NHIS-Teen are from survey participants aged 12-17 years who were originally
-                                        randomly selected as the NHIS Sample Child respondent. NHIS-Teen participants complete
-                                        a self-administered questionnaire about their own health, whereas a parent or adult who
-                                        is knowledgeable about and responsible for the health care of the Sample Child completes
-                                        the NHIS Sample Child Interview. Estimates presented here are based on data from the
-                                        NHIS-Teen interview with selected sociodemographic characteristics based on data from
-                                        the parent interview during the NHIS Sample Child interview.
+                                        Data from NHIS-Teen are from survey participants aged 12-17 years who were originally 
+                                        randomly selected as the NHIS Sample Child respondent. NHIS-Teen participants complete 
+                                        a self-administered questionnaire about their own health, whereas a parent or adult who 
+                                        is knowledgeable about and responsible for the health care of the Sample Child completes 
+                                        the NHIS Sample Child Interview. Estimates presented here are based on data from the 
+                                        NHIS-Teen interview with selected sociodemographic characteristics based on data from 
+                                        the parent interview during the NHIS Sample Child interview. 
 
                                         Unless otherwise noted, unknowns were not included in the denominators when calculating percentages. Two-sided 95% confidence intervals
                                         are calculated using the Clopper-Pearson method adapted for complex surveys by Korn and Graubard.
                                         For more information on the data source, methods, and definitions used for this table, refer
                                         to Technical Notes for Interactive Summary Health Statistics for Teens
-                                        <a href="https://wwwn.cdc.gov/NHISDataQueryTool/SHS_teen/SHS_Tech_Notes.pdf" target="_blank_">
-                                            (available from:  https://wwwn.cdc.gov/NHISDataQueryTool/SHS_teen/SHS_Tech_Notes.pdf)
+                                        <a href="https://wwwn.cdc.gov/NHISDataQueryTool/NHIS_Teen/Teen_Tech_Notes.pdf" target="_blank_">
+                                            (available from:  https://wwwn.cdc.gov/NHISDataQueryTool/NHIS_Teen/Teen_Tech_Notes.pdf)
                                         </a>
                                     </p>
                                     <h3>Suggested citation</h3>
@@ -392,8 +394,8 @@
                                     in the denominators when calculating percentages. Two-sided 95% confidence intervals are calculated using the
                                     Clopper-Pearson method adapted for complex surveys by Korn and Graubard. For more information on the data source,
                                     methods, and definitions used for this table, refer to Technical Notes for Interactive Summary Health Statistics for Teens
-                                    <a href="https://wwwn.cdc.gov/NHISDataQueryTool/SHS_teen/SHS_Tech_Notes.pdf" target="_blank_">
-                                        (available from:  https://wwwn.cdc.gov/NHISDataQueryTool/SHS_teen/SHS_Tech_Notes.pdf)
+                                    <a href="https://wwwn.cdc.gov/NHISDataQueryTool/NHIS_Teen/Teen_Tech_Notes.pdf" target="_blank_">
+                                        (available from:  https://wwwn.cdc.gov/NHISDataQueryTool/NHIS_Teen/Teen_Tech_Notes.pdf)
                                     </a>
                                 </p>
                                 <h3>Suggested citation</h3>
@@ -403,22 +405,22 @@
                             <div id="code-tab" class="tab-pane">
                                 <h3>Interactive Summary Health Statistics for Teens</h3>
                                 <!--       <p>
-                                Summary Health Statistics are tables of descriptive statistics for various health measures including health status,
-                                conditions, health behaviors, activity limitations, health insurance coverage, and access and utilization of health care.
-                                Measures are shown for selected characteristics such as sex, age, race, ethnicity, family income, and region of the
-                                United States. Starting with the 2013 NHIS, Summary Health Statistics are provided in online tables. For the 1997-2012 NHIS,
-                                Summary Health Statistics were provided in three Vital and Health Statistics Series 10 Reports (one each for adults,
-                                children, and the whole population), and for the 1962-1996 NHIS, similar descriptive statistics were provided in Current
-                                Estimates reports, which were also Vital and Health Statistics Series 10 Reports.
-                                </p>  -->
+    Summary Health Statistics are tables of descriptive statistics for various health measures including health status,
+    conditions, health behaviors, activity limitations, health insurance coverage, and access and utilization of health care.
+    Measures are shown for selected characteristics such as sex, age, race, ethnicity, family income, and region of the
+    United States. Starting with the 2013 NHIS, Summary Health Statistics are provided in online tables. For the 1997-2012 NHIS,
+    Summary Health Statistics were provided in three Vital and Health Statistics Series 10 Reports (one each for adults,
+    children, and the whole population), and for the 1962-1996 NHIS, similar descriptive statistics were provided in Current
+    Estimates reports, which were also Vital and Health Statistics Series 10 Reports.
+    </p>
                                 Can be revised to:
 
-                                Interactive Summary Health Statistics for Teens
+                                Interactive Summary Health Statistics for Teens -->
 
                                 For more information on the data source, methods, and definitions used for this table,
                                 refer to Technical Notes for Interactive Summary Health Statistics for Teens:
-                                <a href="https://wwwn.cdc.gov/NHISDataQueryTool/SHS_teen/SHS_Tech_Notes.pdf" target="_blank_">
-                                    (available from:  https://wwwn.cdc.gov/NHISDataQueryTool/SHS_teen/SHS_Tech_Notes.pdf)
+                                <a href="https://wwwn.cdc.gov/NHISDataQueryTool/NHIS_Teen/Teen_Tech_Notes.pdf" target="_blank_">
+                                    (available from:  https://wwwn.cdc.gov/NHISDataQueryTool/NHIS_Teen/Teen_Tech_Notes.pdf)
                                 </a>
                                 <br></br>
                                 Access to the full dataset can be found on Data.CDC.gov by clicking the link below:
@@ -427,14 +429,14 @@
                                 </p>
                                 <br></br>
                                 <!--
-                                                                    <br></br>
-                                                                    <p>Previous year Summary Health Statistics may be accessed by clicking the links below:</p>
-                                                                    <p><a href="https://www.cdc.gov/nchs/nhis/ADULTS/www/index.htm" target="_blank_">Interactive Summary Health Statistics for Adults (2015 to 2018)</a></p>
-                                                                    <p><a href="https://www.cdc.gov/nchs/nhis/KIDS/www/index.htm" target="_blank_"> Interactive Summary Health Statistics for Children (2015 to 2018)</a></p>
-                                                                    <p><a href="/nchs/nhis/SHS/tables.htm" target="_blank_">Tables of Summary Health Statistics (2013 to 2018)</a></p>
-                                                                    <p><a href="/nchs/nhis/SHS_1997_2012.htm" target="_blank_">Summary Health Statistics Vital and Health Statistics Series 10 Reports (1997&ndash;2012 NHIS)</a></p>
-                                                                    <p><a href="/nchs/nhis/quest_doc.htm" target="_blank_">Current Estimates Vital and Health Statistics Series 10 Reports (1962&ndash;1996 NHIS)</a></p>
-                                -->
+                                        <br></br>
+                                        <p>Previous year Summary Health Statistics may be accessed by clicking the links below:</p>
+                                        <p><a href="https://www.cdc.gov/nchs/nhis/ADULTS/www/index.htm" target="_blank_">Interactive Summary Health Statistics for Adults (2015 to 2018)</a></p>
+                                        <p><a href="https://www.cdc.gov/nchs/nhis/KIDS/www/index.htm" target="_blank_"> Interactive Summary Health Statistics for Children (2015 to 2018)</a></p>
+                                        <p><a href="/nchs/nhis/SHS/tables.htm" target="_blank_">Tables of Summary Health Statistics (2013 to 2018)</a></p>
+                                        <p><a href="/nchs/nhis/SHS_1997_2012.htm" target="_blank_">Summary Health Statistics Vital and Health Statistics Series 10 Reports (1997&ndash;2012 NHIS)</a></p>
+                                        <p><a href="/nchs/nhis/quest_doc.htm" target="_blank_">Current Estimates Vital and Health Statistics Series 10 Reports (1962&ndash;1996 NHIS)</a></p>
+    -->
                             </div>
                         </div>
                     </div>
@@ -458,7 +460,7 @@
 
         <div>
             <a class='right usa-button usa-button-big usa-button-outline external-link'
-               href="https://github.com/HHS-NHIS/ER_Biannual" target="_blank">
+               href="https://github.com/HHS-NHIS/NHIS_Teen" target="_blank">
 
                 View on GitHub <img src="externallink.gif" alt="External Link" height="14" width="14">
 
@@ -515,39 +517,43 @@
     <!--#include virtual="/NHISDataQueryTool/TemplatePackage/4.0/includes/svg-other.html" -->
     <!-- Add your page or site specific javascript here -->
     <!-- Add any page or site specific metrics properties here -->
+    <script>
+        s.pageName = document.title;
+        s.channel = "NCHS";
+        siteCatalyst.setAzEntry("");
+        siteCatalyst.setLevel1("");
+        siteCatalyst.setLevel2("");
+        siteCatalyst.setLevel3("");
+        siteCatalyst.setLevel4("");
+        siteCatalyst.setLevel5("");
+    </script>
+    <script>
+        window.shortTitle = "";
+        window.pageOptions = window.pageOptions || {};
+        window.pageOptions.navigation = window.pageOptions.navigation || { fourthLevelNavTitle: "Table of Contents", showFourthLevel: true };
+        window.pageOptions.navigation.breadcrumbs = {
+            mode: 'auto',
+            showCurrentPage: false
+        };
+        window.CDC.tp4.public.appInit(window.pageOptions);
+    </script>
 
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-
-    <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-    <!--  <script src="simplemodal.js"></script> -->
-    <!--   <script src="simplemodal-1.4.4.js"></script> -->
-    <!--   <script src="https://www.ahrq.gov/resources/js/libs/jquery.simplemodal.js"></script>   -->
-    <!--   <script src="https://www.ahrq.gov/resources/js/plugins.js"></script>   -->
-    <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
-    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  -->
-    <!--   <script src="plugins.js"></script>  -->
-    <!--   <script src="ahrq_script.js"></script> -->
-
-
+    <!--#include virtual="/NHISDataQueryTool/TemplatePackage/4.0/includes/page-bottom-extras.html" -->
 
     <script src="datatables.min.js"></script>
     <script src="plotly-latest.min.js"></script>
+
     <script src="uswds.min.js"></script>
 
-
-
     <script type="text/javascript" src="rgbcolor.js"></script>
+
     <script type="text/javascript" src="StackBlur.js"></script>
+
     <script type="text/javascript" src="canvg.js"></script>
 
 
 
     <script type="text/javascript" src="basic.js"></script>
-
-
-
 
     <script src="functions.js"></script>
     <script src="init.js"></script>
@@ -555,10 +561,7 @@
     <script src="em.js"></script>
 
 
-
-
-</body>
-
-
-
+    </body>
 </html>
+
+
